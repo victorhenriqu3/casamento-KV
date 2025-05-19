@@ -27,7 +27,6 @@ body {
 
 header {
   padding: 20px 0;
-  position: sticky;
   top: 0;
   z-index: 100;
 }
@@ -146,7 +145,7 @@ section h2 {
 
 .event-details {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-bottom: 40px;
   flex-wrap: wrap;
 }

@@ -1,4 +1,5 @@
 import "./App.css";
+import EventDetails from "./Components/EventDetails ";
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import Hero from "./Components/Hero";
@@ -8,6 +9,7 @@ function App() {
     <>
       <Header />
       <Hero />
+      <EventDetails />
       <Footer />
     </>
   );
