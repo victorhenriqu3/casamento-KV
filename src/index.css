@@ -307,6 +307,16 @@ footer {
   color: var(--dark-gray);
 }
 
+.rsvp .finished {
+  font-size: 18px;
+  background-color: var(--sage-green);
+  color: white;
+  padding: 10px 30px;
+  border-radius: 30px;
+  margin-top: 20px;
+  text-align: justify;
+}
+
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;

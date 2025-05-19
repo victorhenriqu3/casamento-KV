@@ -9,7 +9,6 @@ const Hero = () => (
       <div className="date">28 de Junho de 2025</div>
       <Countdown />
     </section>
-    <Separator />
   </>
 );
 

@@ -3,13 +3,20 @@ import EventDetails from "./Components/EventDetails ";
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import Hero from "./Components/Hero";
+import RSVPForm from "./Components/RSVPForm";
+import Separator from "./Components/Separator";
 
 function App() {
   return (
     <>
       <Header />
       <Hero />
-      <EventDetails />
+      <div className="container">
+        <Separator />
+        <EventDetails />
+        <Separator />
+        <RSVPForm />
+      </div>
       <Footer />
     </>
   );
