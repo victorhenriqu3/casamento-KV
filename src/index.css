@@ -139,7 +139,7 @@ section h2 {
 }
 
 .section-content {
-  max-width: 800px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -333,5 +333,284 @@ footer {
 
   .hero h2 {
     font-size: 20px;
+  }
+}
+
+/* Improved Mobile Responsiveness */
+
+/* General responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  /* Improved header navigation */
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  /* Hero section adjustments */
+  .hero {
+    height: auto;
+    padding: 60px 0;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+  }
+
+  .hero h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .hero .date {
+    font-size: 20px;
+    padding: 8px 20px;
+  }
+
+  /* Countdown improvements - keeping inline format */
+  .countdown {
+    gap: 10px;
+    justify-content: center;
+    overflow-x: auto;
+    padding-bottom: 10px;
+  }
+
+  .countdown-item {
+    min-width: 70px;
+    padding: 10px;
+    flex-shrink: 0;
+  }
+
+  .countdown-item .number {
+    font-size: 28px;
+  }
+
+  .countdown-item .label {
+    font-size: 12px;
+  }
+
+  /* Event details cards */
+  .event-details {
+    justify-content: center;
+  }
+
+  .detail-card {
+    width: 100%;
+    max-width: 320px;
+    margin: 10px auto;
+  }
+
+  /* RSVP form adjustments */
+  form {
+    padding: 20px;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 10px;
+  }
+
+  .rsvp .finished {
+    font-size: 16px;
+    padding: 8px 20px;
+    text-align: center;
+  }
+
+  /* Section spacing */
+  section {
+    padding: 40px 0;
+  }
+
+  section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero h2 {
+    font-size: 16px;
+  }
+
+  .hero .date {
+    font-size: 18px;
+    padding: 6px 16px;
+  }
+
+  .countdown-item {
+    min-width: 60px;
+    padding: 8px;
+    flex-shrink: 0;
+  }
+
+  .countdown-item .number {
+    font-size: 24px;
+  }
+
+  section h2 {
+    font-size: 28px;
+  }
+
+  .separator .symbol {
+    font-size: 20px;
+  }
+
+  /* Adjust hero decorative elements */
+  .hero::before,
+  .hero::after {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* Improved text readability for all screen sizes */
+body {
+  font-size: 16px;
+}
+
+.detail-card p {
+  line-height: 1.6;
+}
+
+/* Fix for hero height to ensure it's visible properly on all devices */
+@media (max-height: 700px) {
+  .hero {
+    height: auto;
+    min-height: 60vh;
+    padding: 40px 0;
+  }
+}
+
+/* Hamburger Menu Styles */
+
+/* Container for the navigation */
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Hamburger icon */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  z-index: 1001;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+.hamburger .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--dark-gray);
+}
+
+/* Animated hamburger icon when active */
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Original desktop nav menu - no changes needed here */
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  transition: all 0.3s ease;
+}
+
+.nav-menu li {
+  margin: 0 20px;
+}
+
+/* Mobile menu - active class controls visibility */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-container {
+    justify-content: flex-end;
+    padding: 10px 0;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: -100%;
+    top: 0;
+    width: 80%;
+    max-width: 300px;
+    height: 100vh;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding-top: 80px;
+    transition: left 0.3s ease;
+    align-items: center;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-menu li {
+    margin: 15px 0;
+  }
+
+  .nav-menu li a {
+    font-size: 20px;
+  }
+
+  /* Backdrop overlay */
+  body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 900;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    pointer-events: none;
+  }
+
+  /* Show backdrop when menu is active */
+  body.menu-open::after {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
   }
 }
