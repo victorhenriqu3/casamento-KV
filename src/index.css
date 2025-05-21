@@ -713,3 +713,10 @@ body {
     font-size: 20px;
   }
 }
+
+.hero-image {
+  max-width: 50rem;
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
