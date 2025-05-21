@@ -614,3 +614,102 @@ body {
     pointer-events: all;
   }
 }
+
+/* Estilos para o componente de Data e Horário elegante */
+
+.elegant-date-time {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.date-time-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Colunas */
+.date-column,
+.time-column,
+.location-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15px;
+}
+
+/* Números grandes (dia e hora) */
+.large-number {
+  font-size: 62px;
+  font-weight: 300;
+  line-height: 1;
+  color: var(--dark-gray);
+  font-family: "Cormorant Garamond", serif;
+}
+
+/* Nome dos meses e "horas" */
+.label {
+  font-size: 26px;
+  font-family: "Cormorant Garamond", serif;
+  color: var(--gold);
+  font-weight: 400;
+}
+
+/* Divisores com símbolo (usando o componente Separator) */
+.date-time-container .separator {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 15px;
+}
+
+.date-time-container .separator .line {
+  flex-grow: 1;
+  height: 20px;
+  width: 1px;
+  background-color: var(--gold);
+}
+
+.date-time-container .separator .symbol {
+  color: var(--gold);
+  padding: 0 10px;
+  font-size: 16px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .date-column,
+  .time-column,
+  .location-column {
+    padding: 10px 0;
+  }
+
+  .location-column {
+    order: -1;
+    margin-bottom: 15px;
+  }
+
+  .large-number {
+    font-size: 48px;
+  }
+
+  .label {
+    font-size: 22px;
+  }
+}
+
+/* Para telas muito pequenas */
+@media (max-width: 480px) {
+  .large-number {
+    font-size: 42px;
+  }
+
+  .label {
+    font-size: 20px;
+  }
+}
