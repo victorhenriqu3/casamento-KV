@@ -86,11 +86,11 @@ const Header = () => {
                 Início
               </a>
             </li>
-            <li>
+            {/* <li>
               <a href="#nossa-historia" onClick={handleLinkClick}>
                 Nossa História
               </a>
-            </li>
+            </li> */}
             <li>
               <a href="#detalhes" onClick={handleLinkClick}>
                 Detalhes
@@ -101,11 +101,11 @@ const Header = () => {
                 Confirmação
               </a>
             </li>
-            <li>
+            {/* <li>
               <a href="#presentes" onClick={handleLinkClick}>
                 Lista de Presentes
               </a>
-            </li>
+            </li> */}
           </ul>
         </nav>
       </div>

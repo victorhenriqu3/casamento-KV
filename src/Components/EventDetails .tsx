@@ -8,7 +8,7 @@ const eventDetails = [
   },
   {
     title: "Sombra à vontade",
-    description1:
+    description2:
       "O espaço da cerimônia é rodeado de verde e tem bastante sombra.",
   },
   {
@@ -27,13 +27,13 @@ const EventDetails = () => {
           Detalhes do Evento
         </h2>
 
-        <div className="flex flex-wrap justify-center gap-6 mb-12 event-details">
+        <div className="flex flex-wrap  gap-6 mb-12 event-details">
           {eventDetails.map((item, index) => (
             <div
               key={index}
               className="bg-white rounded-xl shadow p-6  max-w-xs text-center detail-card"
             >
-              <h3 className="text-xl text-gold mb-2">{item.title}</h3>
+              <h3 className="text-xl text-gold mb-2 w-100">{item.title}</h3>
               {item.date && (
                 <p>
                   <i className="fas fa-calendar-alt mr-2" />
@@ -58,7 +58,9 @@ const EventDetails = () => {
                   {item.description1}
                 </p>
               )}
-              {item.description2 && <p>{item.description2}</p>}
+              {item.description2 && (
+                <p className="text-justify">{item.description2}</p>
+              )}
             </div>
           ))}
         </div>

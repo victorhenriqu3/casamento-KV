@@ -6,3 +6,16 @@
 .mr-2 {
   margin-right: 0.5rem;
 }
+
+.text-center {
+  text-align: center !important;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+.text-justify {
+  text-align: justify !important;
+  text-wrap: pretty !important;
+}
