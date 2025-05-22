@@ -723,3 +723,303 @@ body {
   height: auto;
   margin-top: 20px;
 }
+
+/* Estilos para Lista de Presentes com PIX */
+
+.gift-section {
+  padding: 60px 0;
+  background-color: #f9f9f7;
+}
+
+.gift-intro {
+  text-align: center;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gift-intro p {
+  font-size: 18px;
+  color: var(--dark-gray);
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.gift-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.gift-option {
+  background-color: white;
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gift-option:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.gift-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.gift-option h3 {
+  font-size: 24px;
+  color: var(--dark-gray);
+  margin-bottom: 15px;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.gift-option p {
+  color: var(--dark-gray);
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+/* Botões */
+.pix-button,
+.gift-button {
+  background-color: var(--gold);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+}
+
+.pix-button:hover,
+.gift-button:hover {
+  background-color: #a88d60;
+  transform: scale(1.05);
+}
+
+/* Destaque especial para a opção PIX */
+.pix-option {
+  border: 2px solid var(--light-gold);
+  position: relative;
+}
+
+.pix-option::before {
+  content: "⭐ Recomendado";
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  background-color: var(--gold);
+  color: white;
+  padding: 5px 15px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Modal do PIX */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.pix-modal {
+  background-color: white;
+  border-radius: 15px;
+  max-width: 500px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.pix-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid var(--light-sage);
+}
+
+.pix-modal-header h3 {
+  color: var(--dark-gray);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 24px;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--dark-gray);
+  padding: 5px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.close-button:hover {
+  background-color: var(--light-sage);
+}
+
+.pix-modal-body {
+  padding: 20px;
+}
+
+.pix-info {
+  margin-bottom: 25px;
+}
+
+.pix-info h4 {
+  color: var(--dark-gray);
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.pix-key {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+  padding: 12px;
+  border-radius: 8px;
+  gap: 10px;
+}
+
+.pix-key span {
+  flex: 1;
+  font-family: monospace;
+  color: var(--dark-gray);
+  word-break: break-all;
+}
+
+.copy-button {
+  background-color: var(--gold);
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.copy-button:hover {
+  background-color: #a88d60;
+}
+
+.copy-button.copied {
+  background-color: #4caf50;
+}
+
+.pix-instructions {
+  margin-bottom: 25px;
+}
+
+.pix-instructions h4 {
+  color: var(--dark-gray);
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.pix-instructions ol {
+  color: var(--dark-gray);
+  line-height: 1.6;
+  padding-left: 20px;
+}
+
+.pix-instructions li {
+  margin-bottom: 5px;
+}
+
+.pix-message {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--light-gold);
+  border-radius: 10px;
+}
+
+.pix-message p {
+  margin-bottom: 10px;
+  color: var(--dark-gray);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .gift-options {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .gift-option {
+    padding: 25px;
+  }
+
+  .pix-modal {
+    margin: 10px;
+    max-height: 85vh;
+  }
+
+  .pix-key {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .copy-button {
+    margin-top: 10px;
+  }
+
+  .pix-modal-header h3 {
+    font-size: 18px;
+  }
+}
+
+.gift-links {
+  text-align: center;
+}
+
+.gift-link-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.gift-link-item a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #f2f2f2;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.gift-link-item a:hover {
+  background-color: #e0e0e0;
+}
