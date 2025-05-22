@@ -1010,16 +1010,17 @@ body {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  background-color: #f2f2f2;
+  background-color: var(--light-gold);
   padding: 0.75rem 1rem;
   border-radius: 10px;
   text-decoration: none;
-  color: #333;
+  color: var(--dark-gray);
   font-weight: 500;
   justify-content: center;
   transition: background-color 0.3s ease;
 }
 
 .gift-link-item a:hover {
-  background-color: #e0e0e0;
+  background-color: var(--gold);
+  color: #fff;
 }
