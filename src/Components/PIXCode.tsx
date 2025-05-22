@@ -64,11 +64,11 @@ const PixQRCode = ({
   isCopied: boolean;
   OnCopy: React.Dispatch<React.SetStateAction<boolean>>;
 }) => {
-  const [chave, setChave] = useState("29ff25f5-1dd2-46cb-803c-218c61996809");
-  const [nome, setNome] = useState("Victor Henrique Monteiro Lima");
-  const [cidade, setCidade] = useState("Porto Velho");
-  const [valor, setValor] = useState("50.00");
-  const [txid, setTxid] = useState("CASAMENTOKV");
+  const chave = import.meta.env.VITE_PIX_CHAVE;
+  const nome = import.meta.env.VITE_PIX_NOME;
+  const cidade = import.meta.env.VITE_PIX_CIDADE;
+  const valor = import.meta.env.VITE_PIX_VALOR;
+  const txid = import.meta.env.VITE_PIX_TXID;
 
   const payload = gerarPayloadPix({ chave, nome, cidade, valor, txid });
 
