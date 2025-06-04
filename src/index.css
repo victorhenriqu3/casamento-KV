@@ -1,5 +1,6 @@
 :root {
   --sage-green: #a0b39c;
+  --sage-dark-green: #8a9d86;
   --light-sage: #d3dbd1;
   --gold: #c2a87d;
   --light-gold: #e8dcbc;
@@ -843,7 +844,7 @@ body {
 .pix-modal {
   background-color: white;
   border-radius: 15px;
-  max-width: 500px;
+  max-width: 720px;
   width: 100%;
   max-height: 90vh;
   overflow-y: auto;
@@ -992,10 +993,6 @@ body {
   }
 }
 
-.gift-links {
-  text-align: center;
-}
-
 .gift-link-list {
   list-style: none;
   padding: 0;
@@ -1023,4 +1020,146 @@ body {
 .gift-link-item a:hover {
   background-color: var(--gold);
   color: #fff;
+}
+
+.havan-info-section {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e9ecef;
+}
+
+.havan-title {
+  color: #2c3e50;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+  border-bottom: 3px solid var(--sage-dark-green);
+  padding-bottom: 0.5rem;
+}
+
+.havan-description {
+  font-size: 1.1rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+/* Informações de busca */
+.search-info {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid var(--sage-dark-green);
+}
+
+.search-info h4 {
+  color: #2c3e50;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.names-box {
+  background: white;
+  padding: 1rem;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--sage-green);
+  font-weight: 700;
+  border: 2px dashed var(--sage-green);
+  letter-spacing: 0.5px;
+}
+
+/* Instruções */
+.havan-instructions {
+  margin-bottom: 1.5rem;
+}
+
+.havan-instructions h4 {
+  color: #2c3e50;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.havan-instructions ol {
+  padding-left: 1.5rem;
+}
+
+.havan-instructions li {
+  margin-bottom: 0.8rem;
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.havan-instructions li::marker {
+  color: var(--sage-green);
+  font-weight: bold;
+}
+
+/* Vantagens */
+.havan-benefits {
+  background: linear-gradient(135deg, #fff5f5 0%, #fed7d7 100%);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.havan-benefits h4 {
+  color: #c53030;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.havan-benefits ul {
+  padding-left: 1.5rem;
+}
+
+.havan-benefits li {
+  margin-bottom: 0.6rem;
+  color: #2d3748;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.havan-benefits li::marker {
+  color: #e53e3e;
+}
+
+/* Contato */
+.contact-havan {
+  text-align: center;
+  padding: 1rem;
+  background: #f7fafc;
+  border-radius: 6px;
+  color: #4a5568;
+  font-style: italic;
+}
+
+/* Seção opções online */
+.online-options {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e9ecef;
+}
+
+.online-options h3 {
+  color: #2c3e50;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 0.5rem;
 }

@@ -101,11 +101,11 @@ const Header = () => {
                 Confirmação
               </a>
             </li>
-            {/* <li>
+            <li>
               <a href="#presentes" onClick={handleLinkClick}>
                 Lista de Presentes
               </a>
-            </li> */}
+            </li>
           </ul>
         </nav>
       </div>

@@ -14,7 +14,7 @@ const eventDetails = [
   {
     title: "Dress Code",
     description1: "Traje Esporte Fino",
-    description2: "Sugerimos cores claras",
+    description2: "Sugerimos cores claras, exceto verde oliva.",
     icon: "tshirt",
   },
 ];

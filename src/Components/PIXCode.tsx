@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { QRCodeSVG } from "qrcode.react";
 
 const gerarPayloadPix = ({

@@ -18,21 +18,53 @@ const GiftLinks = () => {
 
   return (
     <div className="gift-links">
-      <ul className="gift-link-list">
-        {links.map((link) => (
-          <li key={link.nome} className="gift-link-item">
-            <a
-              href={link.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="gift-link-button"
-            >
-              {link.icone}
-              <span>{link.descricao}</span>
-            </a>
-          </li>
-        ))}
-      </ul>
+      <div className="havan-info-section">
+        <div className="havan-details">
+          <p className="havan-description">
+            Visite qualquer loja Havan e encontre opções presenciais especiais
+            selecionadas pelos noivos.
+          </p>
+
+          <div className="search-info">
+            <h4>📋 Como encontrar nossa lista:</h4>
+            <div className="names-box">
+              <strong>
+                Victor Henrique Monteiro Lima <br />&<br /> Karinne Rocha de
+                Lima
+              </strong>
+            </div>
+          </div>
+
+          <div className="havan-instructions">
+            <h4>🛍️ Passo a passo:</h4>
+            <ol>
+              <li>Dirija-se a qualquer loja Havan</li>
+              <li>Procure o balcão de atendimento ou seção de presentes</li>
+              <li>Informe os nomes dos noivos</li>
+              <li>Escolha o presente desejado da nossa lista</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <div className="online-options">
+        <h3>🌐 Opções Online</h3>
+        <ul className="gift-link-list">
+          {links.map((link) => (
+            <li key={link.nome} className="gift-link-item">
+              <a
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="gift-link-button"
+              >
+                {link.icone}
+                <span>{link.descricao}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };
