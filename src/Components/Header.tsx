@@ -96,11 +96,11 @@ const Header = () => {
                 Detalhes
               </a>
             </li>
-            <li>
+            {/* <li>
               <a href="#confirmacao" onClick={handleLinkClick}>
                 Confirmação
               </a>
-            </li>
+            </li> */}
             <li>
               <a href="#presentes" onClick={handleLinkClick}>
                 Lista de Presentes

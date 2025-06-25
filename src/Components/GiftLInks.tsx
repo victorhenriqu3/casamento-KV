@@ -14,6 +14,12 @@ const GiftLinks = () => {
       icone: <FaShoppingCart size={24} />,
       descricao: "Lista de presentes no Mercado Livre",
     },
+    {
+      nome: "Havan",
+      url: "https://lista.havan.com.br/Convidado/ItensListaPresente/836253",
+      icone: <FaShoppingCart size={24} />,
+      descricao: "Lista de presentes na Havan",
+    },
   ];
 
   return (

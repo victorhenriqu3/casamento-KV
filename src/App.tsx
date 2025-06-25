@@ -4,7 +4,7 @@ import Footer from "./Components/Footer";
 import GiftList from "./Components/GiftList";
 import Header from "./Components/Header";
 import Hero from "./Components/Hero";
-import RSVPForm from "./Components/RSVPForm";
+// import RSVPForm from "./Components/RSVPForm";
 import Separator from "./Components/Separator";
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
         <Separator />
         <GiftList />
         <Separator />
-        <RSVPForm />
+        {/* <RSVPForm /> */}
       </div>
       <Footer />
     </>
